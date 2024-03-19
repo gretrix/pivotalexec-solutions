@@ -1,0 +1,88 @@
+// --------------------
+// Include Fonts Here
+// --------------------
+@font-face {
+    font-family: 'Averta-Regular';
+    src: url('../fonts/Averta-Regular.woff2') format('woff2'),
+    url('../fonts/Averta-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$header-font: roboto, san-serif;
+$body-font: roboto, san-serif;
+
+// --------------------
+//  Include Basic Typography
+// --------------------
+
+:root,
+html,
+body {
+    font-size: 16px;
+    @include media-breakpoint-up(md) {
+        font-size: 20px;
+    }
+}
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    &.scroll-lock {
+        max-height: 100%;
+        overflow-y: hidden;
+    }
+}
+* {
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: $body-font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $header-font;
+    margin-top: 0;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+h1, .h1, h2, .h2 {
+    text-transform: capitalize;
+}
+h1, h2, h3 {
+    font-weight: bold;
+}
+h4, h5 {
+    font-weight: normal;
+}
+h1, .h1 {
+    font-size: 2rem;
+    @include media-breakpoint-up(sm) {
+        font-size: 2.5rem;
+    }
+}
+h2, .h2 {
+    font-size: 1.6rem;
+    @include media-breakpoint-up(sm) {
+        font-size: 2rem;
+    }
+}
+h3, .h3 {
+    font-size: 1.5rem;
+}
+h4, .h4 {
+    font-size: 1.1rem;
+}
+h5, .h5 {
+    font-size: 1rem;
+}
+
+// Hero Specific Font Sizes
+.eyebrow {
+    text-transform: uppercase;
+}
+.subheadline {
+    font-size: 1.1rem;
+    opacity: .7;
+}

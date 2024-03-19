@@ -1,0 +1,41 @@
+@import 'variables'; // Change these defaults to match your page style
+@import 'vendor/bootstrap/bootstrap';
+
+.bg-dark-gray {
+    background: #c5c5c6;
+}
+.bg-light {
+    background: #edeff0;
+}
+.text-light {
+    color: #fff;
+    * {
+        color: #fff;
+    }
+}
+.text-dark {
+    color: #606060 !important;
+}
+.color-brand {
+    color: $primary;
+}
+.color-header {
+    color: #000;
+}
+.color-body {
+    color: #333;
+}
+
+// Comment these out if you're not using the following elements. All are enabled by default...
+
+/* purgecss start ignore */
+@import 'vendor/slick'; // Default slick styles 
+/* purgecss end ignore */
+
+// Default Styles
+@import 'typography';
+@import 'global';
+@import 'header';
+@import 'button';
+@import 'section';
+@import 'form';
